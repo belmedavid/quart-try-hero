@@ -1,1 +1,1 @@
-web: gunicorn --worker-class quart.worker.GunicornWorker example:app
+web: hypercorn --worker-class quart.worker.HypercornWorker example:app
